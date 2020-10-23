@@ -1,0 +1,99 @@
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px 1px #000000;
+  font-family: Lucida Console;
+  font-size: 50px;
+  text-align: center;
+}
+
+
+
+body{
+	background: url('homePic.jpg') no-repeat;
+	background-size: cover;
+	font-family: arial;
+	color: white;
+	margin: 0;
+}
+
+ul{
+	margin: : 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul li{
+	float: left;
+	width:  180px;
+	height: 40px;
+background-color: black;
+opacity: .75;
+	line-height: 40px;
+	text-align: center;
+	font-style: 20px;
+
+}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	
+}
+
+ul li a:hover{
+	background-color: white;
+	
+}
+	
+ul li ul li{
+display: none;
+
+}
+
+ul li:hover ul li{
+	display: block;
+	opacity: 1.;
+}
+
+
+
+
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+	font-size: 14px;
+  left: 0;
+}
+
+#SignIn {
+  top: 200px;
+  background-color: #4CAF50;
+
+}
+
+#SignUp {
+  top: 240px;
+  background-color: #2196F3;
+}
+
+#fName {
+  top: 280px;
+  background-color: #f44336;
+}
+
+#fPassword {
+  top: 320px;
+  background-color: #555
+}
