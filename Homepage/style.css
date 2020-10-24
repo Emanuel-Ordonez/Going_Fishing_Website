@@ -86,3 +86,13 @@ ul li:hover ul li {
     top: 320px;
     background-color: #555
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: black;
+    text-align: center;
+ }
