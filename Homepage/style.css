@@ -92,7 +92,8 @@ ul li:hover ul li {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: gray;
-    color: black;
+    background-color: black;
+    opacity: .75;
+    color: white;
     text-align: center;
  }
