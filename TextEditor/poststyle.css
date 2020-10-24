@@ -1,0 +1,28 @@
+h1 {
+    display: inline-block;
+    background-attachment: fixed;
+    color: black;
+}
+
+button {
+    background-color: ghostwhite;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 4px;
+    font-weight: bold;
+    height: 35px;
+    width: 120px;
+}
+
+.account {
+    right: 10px;
+    top: 20px;
+    position: absolute;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
