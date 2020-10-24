@@ -7,7 +7,7 @@
  
   <link rel="stylesheet" type="text/css" href="style.css" />
 
-  <script type="text/javascript" src="function.js"> </script>
+  <script type="text/javascript" src="../Universal/function.js"> </script>
   </head>
 
 <body>
@@ -16,7 +16,10 @@
   <h1 class ="companyName">The Tackle Box</h1>
     <nav>
       <div id="menuBar" class="navbar">
-        
+      <script>
+        document.write(setUpMenu());
+      </script>
+      <!--This should be getting replaced by setUpMenu()
         <ul>
           <li>Home </li>
           <li>Weather</li>
@@ -50,7 +53,7 @@
             </ul>
           </li>
       </ul>
-     </div>
+     </div>-->
    </nav>
 
    <div id="mySidenav" class="sidenav">

@@ -1,8 +1,7 @@
 function setUpMenu() {
-    alert();
     var code = "";
     code += "<ul>";
-    code += "<li>Home </li>";
+    code += "<li>Home</li>";
     code += "<li>Weather</li>";
     code += "<li>Forums";
     code += "<ul>";
