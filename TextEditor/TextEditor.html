@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Homepage: The Tackle BoxT</title>
+  <link rel="stylesheet" type="text/css" href="poststyle.css" />
+
+  <script type="text/javascript" href="blog_function.js"> </script>
+  <script src="ckeditor/ckeditor.js"></script>
+  </head>
+
+<body>
+    <div>
+        <h1>The Tackle Box</h1>
+        <span class="account">
+            <button>Login</button>
+            <button>Sign-up</button>
+        </span>
+    </div>
+    <form>
+        <textarea name="editor1" id="editor1" rows="10" cols="80">
+        </textarea>
+        <script>
+            // Replace the <textarea id="editor1"> with a CKEditor 4
+            // instance, using default configuration.
+            CKEDITOR.replace( 'editor1' );
+        </script>
+
+        <br/>
+        <button type="submit" aria-label="submit" id="submit" class="center">Submit Button</button>
+        <br/>
+        <button type="cancel" aria-label="cancel" id="cancel" class="center">Cancel Button</button>
+        
+    </form>
+</body>
+</html>
