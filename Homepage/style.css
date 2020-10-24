@@ -9,6 +9,8 @@ h1 {
 body {
     background: url('homePic.jpg') no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: arial;
     color: white;
     margin: 0;
