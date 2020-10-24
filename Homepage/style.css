@@ -9,6 +9,9 @@ h1 {
 body {
     background: url('homePic.jpg') no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     font-family: arial;
     color: white;
     margin: 0;
@@ -86,3 +89,20 @@ ul li:hover ul li {
     top: 320px;
     background-color: #555
 }
+
+.main-container {
+    min-height: 100vh; /* cover viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; /* height of footer */
+   }
+
+.footer {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    opacity: .75;
+    color: white;
+    text-align: center;
+ }
