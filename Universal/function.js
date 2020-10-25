@@ -1,7 +1,9 @@
 function setUpMenu() {
     var code = "";
+    code += "<nav>";
+    code += "<div id='menuBar' class='navbar'>";
     code += "<ul>";
-    code += "<li>Home</li>";
+    code += "<li><a href='../Homepage/Homepage.html'>Home</a></li>";
     code += "<li>Weather</li>";
     code += "<li>Forums";
     code += "<ul>";
@@ -27,12 +29,14 @@ function setUpMenu() {
     code += "</li>";
     code += "<li>Fishing Resources";
     code += "<ul>";
-    code += "<li>Beginner's Guide</li>";
-    code += "<li>Fishing Gear</li>";
+    code += "<li><a href='../resources/guide.html'>Beginner's Guide</a></li>";
+    code += "<li><a href='../resources/gear.html'>Fishing Gear</a></li>";
     code += "<li>FAQ</li>";
     code += "</ul>";
     code += "</li>";
     code += "</ul>";
+    code += "</div>";
+    code += "</nav>";
 
     return code;
 }
