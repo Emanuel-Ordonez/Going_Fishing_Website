@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>User Profile</title>
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css"/>
+        <script type="text/javascript" src="SignUpJS.js"></script>
+    </head>
+    <body>
+        <div class="center-profile">
+            <img class="profilePic" src="usericon.png" alt="UserProfile">
+            <table class="userinfo">
+                <tr>
+                    <th>Username: </th>
+                    <td class="username">Lorem ipsum dolor</td>
+                </tr>
+
+                <tr>
+                    <th>Email: </th>
+                    <td class="email">Lorem ipsum dolor</td>
+                </tr>
+                <tr>
+                    <th>Date Created: </th>
+                    <td class="date">Lorem ipsum dolor</td>
+                </tr>
+            </table>
+            <form method="post">
+                <label class="changePass">Change Password</label>
+                <div class="passChange">
+                    <label>Old Password</label>
+                    <input id="oldPass" type="password">
+                </div>
+                <div class="passChange">
+                    <label>New Password</label>
+                    <input id="newPass" type="password">
+                </div>
+                <div class="passChange">
+                    <label>Repeat New Password</label>
+                    <input id="newPassVerify" type="password">
+                </div>
+                <div class="Mis">
+                    <label id="Mismatch">Passwords do not match</label>
+                </div>
+                <input type="Submit" value="Change Password">
+            </form>
+        </div>
+        <script type = "text/javascript" src = "SignUpJSReg2.js"></script>
+    </body>
+</html>
