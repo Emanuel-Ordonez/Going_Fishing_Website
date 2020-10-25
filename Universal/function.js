@@ -3,7 +3,7 @@ function setUpMenu() {
     code += "<nav>";
     code += "<div id='menuBar' class='navbar'>";
     code += "<ul>";
-    code += "<li>Home</li>";
+    code += "<li><a href='../Homepage/Homepage.html'>Home</a></li>";
     code += "<li>Weather</li>";
     code += "<li>Forums";
     code += "<ul>";
