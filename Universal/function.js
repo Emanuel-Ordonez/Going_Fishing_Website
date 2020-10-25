@@ -40,3 +40,16 @@ function setUpMenu() {
 
     return code;
 }
+
+function setUpSideNav() {
+    var navCode = "";
+    navCode += "<div id='mySidenav' class='sidenav'>";
+    navCode += "<!--4 warning this is fixed with href-->";
+    navCode += "<a href='../Login-Signup/LoginPage.html' id='SignIn'>Sign In</a>";
+    navCode += "<a href='../Login-Signup/SignupPage.html' id='SignUp'>Sign Up</a>";
+    navCode += "<a href='' id='fName'>Forgot Name</a>";
+    navCode += "<a href='../Login-Signup/ForgotPasswordPage.html' id='fPassword'>Forgot Password</a>";
+    navCode += "</div>";
+
+    return navCode;
+}
