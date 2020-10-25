@@ -6,49 +6,17 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 
   <script type="text/javascript" href="script.js"> </script>
+  
+  <script type="text/javascript" src="../Universal/function.js"> </script>
   </head>
 
 <body>
 <!--Container separates body from footer-->
 <div class="main-container">
   <h1 class ="companyName">The Tackle Box</h1>
-    <nav>
-    <div class="navbar">
-    <ul>
-      <li>Home </li>
-      <li>Weather</li>
-      <li>Forums 
-        <ul>
-          <li>Online Chat</li>
-          <li>Stories</li>
-          <li>Blogs</li>
-          <li>Delicious Recipes</li>
-        </ul>
-      </li>
-      <li>Maps 
-        <ul>
-          <li>Check-In</li>
-          <li>North County</li>
-          <li>Mid County</li>
-          <li>South County</li>
-        </ul>
-      </li>
-      <li>Gallery 
-        <ul>
-          <li>Post your Catch</li>
-          <li>Catch of the Day</li>
-        </ul>
-      </li>
-      <li>Fishing Resources 
-        <ul>
-          <li><a href="guide.html">Beginner's Guide</a></li>
-          <li><a href="gear.html">Fishing Gear</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </li>
-   </ul>
-     </div>
-   </nav>
+    <script>
+      document.write(setUpMenu());
+    </script>
 
    <div id="mySidenav" class="sidenav">
      <a href="" id="SignIn">Sign In</a>
