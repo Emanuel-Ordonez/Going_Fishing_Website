@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body{
+    background-attachment: fixed;
     background-image: url('homePic.jpg');
     background-repeat: no-repeat;
     background-size: cover;
