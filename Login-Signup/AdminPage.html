@@ -2,9 +2,9 @@
 
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="StyleSheet.css">
         <meta charset="utf-8">
         <title>Admin Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="StyleSheet.css"/>
     </head>
     <body>
         <div class="container">
@@ -83,10 +83,13 @@
                 </div>
             </div>
             <div class="banUser">
-                <label>Ban User</label>
+                
                 <form class="banForm" method="post">
-                    <input type="text" id="username" placeholder="Username to ban">
-                    <input type="Submit" value="Ban User">
+                    <fieldset>
+                        <legend>Ban User</legend>
+                            <input type="text" id="username" aria-label="username entry"  placeholder="Username to ban">
+                            <input type="Submit" value="Ban User">
+                    </fieldset>
                 </form>
             </div>      
         </div>
