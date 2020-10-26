@@ -42,6 +42,7 @@ ul li a {
 
 ul li a:hover {
     background-color: white;
+    color: black;
 }
 
 ul li ul li {
