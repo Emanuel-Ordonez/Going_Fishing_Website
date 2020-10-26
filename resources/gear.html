@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
   <title>Homepage: The Tackle Box</title>
-  <!--This is like the one in Homepage this could be changed-->
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  
+  <!--This file is for all files-->
+  <link rel="stylesheet" type="text/css" href="../Universal/style.css" />
+  
+  <!--This file is for resource files-->
+  <link rel="stylesheet" type="text/css" href="resourceStyle.css" />
 
   <!--local css for this page only-->
   <link rel="stylesheet" type="text/css" href="gearStyle.css" />
@@ -18,16 +22,8 @@
   <h1 class ="companyName">The Tackle Box</h1>
     <script>
       document.write(setUpMenu());
+      document.write(setUpSideNav());
     </script>
-    
-   <div id="mySidenav" class="sidenav">
-      <!--These cause warning W867 which 
-      will fix once there are links-->
-     <a href="" id="SignIn">Sign In</a>
-     <a href="" id="SignUp">Sign Up</a>
-     <a href="" id="fName">Forgot Name</a>
-     <a href="" id="fPassword">Forgot Password</a>
-    </div>
   
   <div class="content-container">
     <h2>Essential Gear for Fishing</h2>
@@ -91,7 +87,7 @@
     </p>
     <br />
     
-    <img id="tacklebox_image" src="images/tacklebox.png" alt="tacklebox"  class="img-options-left">
+    <img id="tacklebox_image" src="images/tacklebox.png" alt="tacklebox" class="img-options-left">
     <h3>The Tacklebox</h3>
     <p>
       A tacklebox provides a valuable means to keep all of your gear organized. It is an 

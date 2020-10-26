@@ -68,6 +68,7 @@ ul li:hover ul li {
 #mySidenav a:hover {
     font-size: 14px;
     left: 0;
+    float: left;
 }
 
 #SignIn {

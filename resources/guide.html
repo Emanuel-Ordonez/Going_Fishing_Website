@@ -3,8 +3,11 @@
 <head>
   <title>Homepage: The Tackle Box</title>
 
-  <!--This is like the one in Homepage this could be changed-->
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <!--This file is for all files-->
+  <link rel="stylesheet" type="text/css" href="../Universal/style.css" />
+  
+  <!--This file is for resource files-->
+  <link rel="stylesheet" type="text/css" href="resourceStyle.css" />
 
   <!--local css for this page only-->
   <link rel="stylesheet" type="text/css" href="guideStyle.css" />
@@ -18,15 +21,9 @@
       <h1 class ="companyName">The Tackle Box</h1>
       <script>
         document.write(setUpMenu());
+        document.write(setUpSideNav());
       </script>
       
-      <div id="mySidenav" class="sidenav">
-      <!--4 warning this is fixed with href-->
-        <a href="" id="SignIn">Sign In</a>
-        <a href="" id="SignUp">Sign Up</a>
-        <a href="" id="fName">Forgot Name</a>
-        <a href="" id="fPassword">Forgot Password</a>
-      </div>
       
       <div class="content-container">
         <h2>Beginner's Guide to Fishing</h2>

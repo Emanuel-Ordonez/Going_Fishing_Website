@@ -10,35 +10,40 @@
     <body>
         <div class="center-profile">
             <img class="profilePic" src="usericon.png" alt="UserProfile">
-            <table class="userinfo">
+            <table aria-label="User info" class="userinfo">
                 <tr>
-                    <th>Username: </th>
-                    <td class="username">Lorem ipsum dolor</td>
+                    <th id="username">Username: </th>
+                    <td headers="username" class="username">Lorem ipsum dolor</td>
                 </tr>
 
                 <tr>
-                    <th>Email: </th>
-                    <td class="email">Lorem ipsum dolor</td>
+                    <th id="email">Email: </th>
+                    <td headers="email" class="email">Lorem ipsum dolor</td>
                 </tr>
+                
                 <tr>
-                    <th>Date Created: </th>
-                    <td class="date">Lorem ipsum dolor</td>
+                    <th id="date_created">Date Created: </th>
+                    <td headers="date_created" class="date">Lorem ipsum dolor</td>
                 </tr>
             </table>
             <form method="post">
-                <label class="changePass">Change Password</label>
+                <label class="changePass">Change User Password</label>
+                
                 <div class="passChange">
                     <label>Old Password</label>
-                    <input id="oldPass" type="password">
+                    <input id="oldPass" aria-label="Enter Old Password" type="password">
                 </div>
+                
                 <div class="passChange">
                     <label>New Password</label>
-                    <input id="newPass" type="password">
+                    <input id="newPass" aria-label="Enter New Password" type="password">
                 </div>
+                
                 <div class="passChange">
                     <label>Repeat New Password</label>
-                    <input id="newPassVerify" type="password">
+                    <input id="newPassVerify" aria-label="Enter New Password Again" type="password">
                 </div>
+                
                 <div class="Mis">
                     <label id="Mismatch">Passwords do not match</label>
                 </div>
