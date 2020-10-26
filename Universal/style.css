@@ -25,7 +25,7 @@ ul {
 
 ul li {
     float: left;
-    width: 180px;
+    width: calc(100%/6);
     height: 40px;
     background-color: black;
     opacity: .75;
@@ -53,6 +53,10 @@ ul li:hover ul li {
     opacity: 1.;
 }
 
+nav {
+    z-index: 25;
+}
+
 #mySidenav a {
     position: absolute;
     left: -80px;
@@ -71,23 +75,23 @@ ul li:hover ul li {
     float: left;
 }
 
+#profile {
+    top: 220px;
+    background-color: #f44336;
+}
+
 #SignIn {
-    top: 200px;
+    top: 260px;
     background-color: #4CAF50;
 }
 
 #SignUp {
-    top: 240px;
+    top: 300px;
     background-color: #2196F3;
 }
 
-#fName {
-    top: 280px;
-    background-color: #f44336;
-}
-
 #fPassword {
-    top: 320px;
+    top: 340px;
     background-color: #555
 }
 
@@ -108,4 +112,30 @@ ul li:hover ul li {
     opacity: .75;
     color: white;
     text-align: center;
+}
+
+.content-container {
+    margin-left: 80px;
+    margin-right: 115px;
+    margin-top: 115px;
+    padding: 20px;
+    background-color: gray;
+    color: white;
+    z-index: 0;
+}
+
+.img-options-right {
+    float: right;
+    padding-left: 10px;
+}
+
+.img-options-left {
+    float: left;
+    padding-right: 10px;
+}
+
+.img-options-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
