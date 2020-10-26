@@ -25,7 +25,7 @@ ul {
 
 ul li {
     float: left;
-    width: 180px;
+    width: calc(100%/6);
     height: 40px;
     background-color: black;
     opacity: .75;
@@ -71,23 +71,23 @@ ul li:hover ul li {
     float: left;
 }
 
+#profile {
+    top: 220px;
+    background-color: #f44336;
+}
+
 #SignIn {
-    top: 200px;
+    top: 260px;
     background-color: #4CAF50;
 }
 
 #SignUp {
-    top: 240px;
+    top: 300px;
     background-color: #2196F3;
 }
 
-#fName {
-    top: 280px;
-    background-color: #f44336;
-}
-
 #fPassword {
-    top: 320px;
+    top: 340px;
     background-color: #555
 }
 

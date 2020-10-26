@@ -13,7 +13,6 @@
   <link rel="stylesheet" type="text/css" href="contactStyle.css" />
   
   <script type="text/javascript" src="../Universal/function.js"> </script>
-  <script type="text/javascript" src="contactScript1.js"> </script>
 
   <meta charset="UTF-8">
 </head>
@@ -30,24 +29,23 @@
   <div class="content-container">
     <h2>Contact Us</h2>
     <div class="contact-container">
-        <!--action was here removed for validator-->
-        <form id="contactForm" method="post">
+        <form id="contactForm" method="post" action="confirmation.html">
           <label for="firstname">First Name</label>
-          <input type="text" id="firstname" name="firstname" placeholder="Your First Name">
+          <input type="text" id="firstname" name="firstname" placeholder="Your first name beginning with a capitol letter" pattern="^[A-Z][a-z]+$" required>
       
           <label for="lastname">Last Name</label>
-          <input type="text" id="lastname" name="lastname" placeholder="Your Last Name">
+          <input type="text" id="lastname" name="lastname" placeholder="Your last name beginning with a capitol letter." pattern="^[A-Z][a-z]+$" required>
       
           <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Your Email">
+          <input type="text" id="email" name="email" placeholder="Your email with correct format." pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
       
           <label for="question">Question or Comment</label>
-          <textarea id="question" name="question" placeholder="What would you like to ask us?" style="height:200px"></textarea>
+          <textarea id="question" name="question" placeholder="What would you like to ask us?" style="height:200px" required></textarea>
           
           <input type="reset" value="Reset">
           <input type="submit" id = "submit" value="Submit">
         </form>
-        <script type = "text/javascript" src = "contactScript2.js"></script>
+
       </div>
   </div>
 
