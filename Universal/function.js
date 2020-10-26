@@ -55,3 +55,12 @@ function setUpSideNav() {
 
     return navCode;
 }
+
+function setUpFooter() {
+    var footerCode = "";
+    footerCode += "<div class=\"footer\">"
+    footerCode += "<p>Testing Footer</p>";
+    footerCode += "</div>";
+
+    return footerCode;
+}
