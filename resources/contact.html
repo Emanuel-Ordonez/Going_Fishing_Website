@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Homepage: The Tackle Box</title>
+  
+  <!--This file is for all files-->
+  <link rel="stylesheet" type="text/css" href="../Universal/style.css" />
+  
+  <!--This file is for resource files-->
+  <link rel="stylesheet" type="text/css" href="resourceStyle.css" />
+
+  <!--local css for this page only-->
+  <link rel="stylesheet" type="text/css" href="contactStyle.css" />
+  
+  <script type="text/javascript" src="../Universal/function.js"> </script>
+  <script type="text/javascript" src="contactScript1.js"> </script>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+<!--Container separates body from footer-->
+<div class="main-container">
+  <h1 class ="companyName">The Tackle Box</h1>
+    <script>
+      document.write(setUpMenu());
+      document.write(setUpSideNav());
+    </script>
+  
+  <div class="content-container">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+        <!--action was here removed for validator-->
+        <form id="contactForm" method="post">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="firstname" placeholder="Your First Name">
+      
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Your Last Name">
+      
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your Email">
+      
+          <label for="question">Question or Comment</label>
+          <textarea id="question" name="question" placeholder="What would you like to ask us?" style="height:200px"></textarea>
+          
+          <input type="reset" value="Reset">
+          <input type="submit" id = "submit" value="Submit">
+        </form>
+        <script type = "text/javascript" src = "contactScript2.js"></script>
+      </div>
+  </div>
+
+<!--Separate footer from body-->
+</div>    
+<div class="footer">
+    <p>Contact Us   |   About Us   |   Admin Login</p>
+</div>
+</body>
+</html>
