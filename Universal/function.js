@@ -30,6 +30,7 @@ function setUpMenu() {
     code += "</li>";*/
     //code += "<li>Fishing Resources";
     //code += "<ul>";
+    code += "<li>Gallery</li>";
     code += "<li><a href='../resources/guide.html'>Beginner's Guide</a></li>";
     code += "<li><a href='../resources/gear.html'>Fishing Gear</a></li>";
     code += "<li><a href='../resources/about.html'>About Us</a></li>";
