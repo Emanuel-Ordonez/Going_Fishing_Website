@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Forum: The Tackle Box</title>
+        
+    <!--This file is for all files-->
+    <link rel="stylesheet" type="text/css" href="../Universal/style.css" />
+    <!--local css for this page only-->
+    <link rel="stylesheet" type="text/css" href="aboutStyle.css" />
+    <script type="text/javascript" src="../Universal/function.js"> </script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+   <!--Main-Container separates body from footer-->
+   <div class="main-container">
+     <h1 class ="companyName">The Tackle Box</h1>
+       <script>
+         document.write(setUpMenu());
+         document.write(setUpSideNav());
+       </script>
+
+     <!--Content-Container hold the -->
+     <div class="content-container">
+       <h1>Add a Topic</h1>
+         <form method=post action="addtopic.php">
+
+           <p><strong>User Name:</strong><br>  
+             <input type="text" name="topic_owner" maxlength=50>
+           
+           <p><strong>Topic Title:</strong><br>
+             <input type="text" name="topic_title" size=40 maxlength=100>
+
+           <P><strong>Post Text:</strong><br>
+             <textarea name="post_text" rows=8 cols=40 wrap=virtual></textarea>
+
+           <P><input type="submit" name="submit" value="Add Topic"></p>
+         </form>
+       </div>
+     </div>
+
+    <!--Separate footer from body-->
+    <script>
+    document.write(setUpFooter());
+    </script>
+  </body>
+</html>
+ 
+
+
