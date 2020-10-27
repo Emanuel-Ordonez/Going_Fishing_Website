@@ -59,7 +59,7 @@ function setUpSideNav() {
 function setUpFooter() {
     var footerCode = "";
     footerCode += "<div class=\"footer\">"
-    footerCode += "<p>Testing Footer</p>";
+    footerCode += "<p>&#169;2020 CIS444 Group \#5 | <a href='../Login-Signup/AdminPage.html' id='admin'>Admin Options</a> (Made available for testing purposes.)</p>";
     footerCode += "</div>";
 
     return footerCode;
