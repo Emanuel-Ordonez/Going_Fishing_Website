@@ -123,6 +123,7 @@ nav {
     background-color: gray;
     color: white;
     z-index: 0;
+    overflow: auto;
 }
 
 .img-options-right {
