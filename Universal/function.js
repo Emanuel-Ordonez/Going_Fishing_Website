@@ -6,7 +6,7 @@ function setUpMenu() {
     code += "<ul>";
     code += "<li><a href='../Homepage/Homepage.html'>Home</a></li>";
     //code += "<li>Weather</li>";
-    code += "<li>Forum</li>";
+    code += "<li><a href='../resources/forum.html'>Forum</a></li>";
     //code += "<ul>";
     /*code += "<li>Online Chat</li>";
     code += "<li>Stories</li>";
