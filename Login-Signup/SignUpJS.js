@@ -23,44 +23,71 @@ function checker()
     }
 }
 
+function checker2()
+{
+    var passNode = document.getElementById("Pass");
+    var repassNode = document.getElementById("RePass");
+    var passLabel = document.getElementById("Mismatch");
+    if(passNode.value.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/))
+    {
+        passLabel.innerHTML = "Password fits criteria!";
+        passLabel.style.color = "green";
+        passLabel.style.visibility = "visible";
+    }
+    else
+    {
+        passLabel.innerHTML = "Minimum eight characters, at least one uppercase letter, one lowercase letter, one number, and one special character.";
+        passLabel.style.color = "red";
+        passLabel.style.visibility = "visible";
+    }
+}
+
 function changeVerify()
 {
     var oldPassNode = document.getElementById("oldPass");
     var newPassNode = document.getElementById("newPass");
     var newPassVerifyNode = document.getElementById("newPassVerify");
     var passLabel = document.getElementById("Mismatch");
-    if(oldPassNode.value == newPassNode.value)
+    if(newPassNode.value!="" || newPassVerifyNode.value!="")
     {
-        passLabel.innerHTML = "Can't use old password!";
-        passLabel.style.visibility = "visible";
-    }
-    else if(oldPassNode.value == newPassVerifyNode.value)
-    {
-        passLabel.innerHTML = "Can't use old password!";
-        passLabel.style.visibility = "visible";
-    }
-    // else if(oldPassNode.value != newPassNode.value || oldPassNode.value != newPassVerifyNode.value)
-    // {
-    //     passLabel.innerHTML = "Password do not match!";
-    //     passLabel.style.color = "red";
-    //     passLabel.style.visibility = "hidden";
-    // }
-    else if(newPassNode.value == newPassVerifyNode.value)
-    {
-        passLabel.innerHTML = "Password match!";
-        passLabel.style.color = "green";
-        passLabel.style.visibility = "visible";
-    }
-    else if(newPassNode.value != newPassVerifyNode.value)
-    {
-        passLabel.innerHTML = "Password do not match!";
-        passLabel.style.color = "red";
-        passLabel.style.visibility = "visible";
-    }
-    else
-    {
-        passLabel.innerHTML = "Password do not match!";
-        passLabel.style.color = "red";
-        passLabel.style.visibility = "hidden";
+        if(newPassNode.value!=oldPassNode.value)
+        {
+            if(newPassNode.value.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/) || newPassVerifyNode.value.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/))
+            {
+                passLabel.innerHTML = "Password fits criteria!";
+                passLabel.style.color = "green";
+                passLabel.style.visibility = "visible";
+                if(newPassNode.value==newPassVerifyNode.value)
+                {
+                    passLabel.innerHTML = "Password match!";
+                    passLabel.style.color = "green";
+                    passLabel.style.visibility = "visible";
+                }
+                else if((newPassNode.value!=newPassVerifyNode.value) && (newPassNode.value!="" && newPassVerifyNode.value!=""))
+                {
+                    passLabel.innerHTML = "Password do not match!";
+                    passLabel.style.color = "red";
+                    passLabel.style.visibility = "visible";
+                }
+                // else if((newPassNode.value=="" && newPassVerifyNode.value!="") || (newPassVerifyNode.value=="" && newPassNode.value!=""))
+                // {
+                //     passLabel.innerHTML = "Password do not match!";
+                //     passLabel.style.color = "red";
+                //     passLabel.style.visibility = "hidden";
+                // }
+            }
+            else
+            {
+                passLabel.innerHTML = "Minimum eight characters, at least one uppercase letter, one lowercase letter, one number, and one special character.";
+                passLabel.style.color = "red";
+                passLabel.style.visibility = "visible";
+            }
+        }
+        else
+        {
+            passLabel.innerHTML = "Can't use old password!";
+            passLabel.style.color = "red";
+            passLabel.style.visibility = "visible";
+        }
     }
 }
