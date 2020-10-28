@@ -3,12 +3,12 @@ nav {
 }
 
 .content-container {
+    background-color: gray;
+    color: white;
     margin-left: 80px;
     margin-right: 115px;
     margin-top: 115px;
     padding: 20px;
-    background-color: gray;
-    color: white;
     z-index: 0;
 }
 

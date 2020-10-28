@@ -1,48 +1,49 @@
 .parent-Container{
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-left: 80px;
     margin-right: auto;
     margin-top: 115px;
     padding: 20px;
     z-index: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: flex-start;
+    
 }
 
 .entry-Container{
-    margin: 30px;
-    float: left;
-    width: 300px;
-    height: 350px;
     background-color: gray;
     color: white;
-    text-align: center;
-    position: relative;
+    float: left;
+    height: 350px;
     justify-content: center;
+    margin: 30px;
+    position: relative;
+    text-align: center;
+    width: 300px;
 }
 
 .upload{
+    font-size: 20px;
+    left: 50%;
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 20px;
 }
 
 img.entry-Container{
-    width: 240px;
     height: auto;
+    width: 240px;
 }
 
 .page-turn{
-    margin-left: 80px;
-    margin-right: auto;
     color: white;
     font-size: 20px;
+    margin-left: 80px;
+    margin-right: auto;
     text-align: center;
 }
 
@@ -51,74 +52,76 @@ img.entry-Container{
 }
 
 .button{
-    position: absolute;
-    top: 150px;
-    left: 78px;
-    border: none;
-    background-color: whitesmoke;
-    padding: 15px 30px;
-    text-align: center;
-    font-size: 15px;
     align-self: center;
+    background-color: whitesmoke;
+    border: none;
     display: inline-block;
-
+    font-size: 15px;
+    left: 78px;
+    padding: 15px 30px;
+    position: absolute;
+    text-align: center;
+    top: 150px;
 }
 
 .confirm-button{
-    border: none;
-    background-color: whitesmoke;
-    padding: 15px 30px;
-    text-align: center;
-    font-size: 15px;
     align-self: center;
+    background-color: whitesmoke;
+    border: none;
+    font-size: 15px;
     margin-bottom: 50px;
+    padding: 15px 30px;
+    text-align: center; 
 }
 
 .overlay {
-    position: fixed; 
-    width: 100%; 
-    height: 100%; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); 
-    z-index: 2; 
-    display: flex;
-    align-items: center;
     align-content: center;
+    align-items: center;
+    /* fallback color because some browsers (IE) don't like alpha for some reason*/
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5); 
+    
+    bottom: 0;
+    display: flex;
+    height: 100%; 
     justify-content: space-around;
-    visibility: hidden;
+    left: 0;
     opacity: 0;
+    position: fixed; 
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    width: 100%; 
+    z-index: 2; 
   }
 
 .overlay:target{
-    visibility: visible;
     opacity:1;
+    visibility: visible;
 }
 
 .new-entry{
-    z-index: 3;
-    position: fixed;
+    align-content: center;
+    align-items: center;
     background-color: gray;
-    width: 700px;
-    height: 600px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: center;
+    height: 600px;
     justify-content: flex-end;
     overflow: auto;
+    position: fixed;
+    width: 700px;
+    z-index: 3;
 }
 
 #description{
+    display: flex;
     height: 100px;
-    text-align: left;
-    width: 600px;
+    justify-self: center;
     margin: 20px;
     resize: none;
-    display: flex;
-    justify-self: center;
+    text-align: left;
+    width: 600px;
 }
 
 #title{
@@ -132,16 +135,16 @@ img.entry-Container{
 }
 
 .preview-image{
-    width: auto;
     height: 200px;
-    position: absolute;
-    padding-bottom: 30px;
-    top: 50px;
     left: 300px;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 50px;
+    width: auto;
 }
 
 .close-button{
+    left: 640px;
     position: absolute;
     top: 10px;
-    left: 640px;
 }
