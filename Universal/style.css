@@ -3,7 +3,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     color: white;
     font-family: arial;
     margin: 0;
@@ -23,8 +23,8 @@ nav {
 
 ul {
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 ul li {
@@ -60,42 +60,44 @@ ul li:hover ul li {
     opacity: 1.;
 }
 
-#mySidenav a {
+div[id='mySidenav'] a {
     border-radius: 0 5px 5px 0;
     color: white;
     font-size: 12px;
     left: -80px;
-    padding: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
     position: absolute;
+    text-align: center;
     text-decoration: none;
     transition-duration: 0.3s;
     /* Orignal replaced with above */
     /* transition: 0.3s; */
-    width: 100px;
+    width: 150px;
 }
 
-#mySidenav a:hover {
+div[id='mySidenav'] a:hover {
     float: left;
     font-size: 14px;
     left: 0;
 }
 
-#profile {
+a[id='profile'] {
     background-color: #f44336;
     top: 220px;
 }
 
-#SignIn {
+a[id='SignIn'] {
     background-color: #4CAF50;
     top: 260px;
 }
 
-#SignUp {
+a[id='SignUp'] {
     background-color: #2196F3;
     top: 300px;
 }
 
-#fPassword {
+a[id='fPassword'] {
     background-color: #555;
     top: 340px;
 }
