@@ -1,0 +1,58 @@
+figure {
+    background-color: grey;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 33%;
+}
+
+.intro2 {
+    background-color: gray;
+    border: 2px solid black;
+    font-size: 20px;
+    margin: auto;
+    margin-left: 125px;
+    margin-right: 125px;
+    outline-color: grey;
+    outline-style: outset;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    background-color: black;
+    column-gap: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.grid-container div {
+    background-color: #cccccc;
+    font-size: 30px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item img {
+    display: inline-block;
+    width: 100%;
+}
+
+.wrap {
+    text-align: center;
+    width: 100px;
+}
