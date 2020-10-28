@@ -141,3 +141,10 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
+
+.logoutButton {
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
