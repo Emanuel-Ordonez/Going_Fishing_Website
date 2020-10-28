@@ -1,5 +1,6 @@
 function setUpMenu() {
     var code = "";
+    code += "<div class=\"logoutButton\"><br /><a href=\"../Login-Signup/ConfirmLogout.html\">Logout</a></div>"
     code += "<nav>";
     code += "<div id='menuBar' class='navbar'>";
     code += "<ul>";
