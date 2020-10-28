@@ -4,7 +4,6 @@ function setUpMenu() {
     code += "<div id='menuBar' class='navbar'>";
     code += "<ul>";
     code += "<li><a href='../Homepage/Homepage.html'>Home</a></li>";
-    code += "<li><a href='../resources/forum.html'>Forum</a></li>";
     code += "<li>Gallery</li>";
     code += "<li><a href='../resources/guide.html'>Beginner's Guide</a></li>";
     code += "<li><a href='../resources/gear.html'>Fishing Gear</a></li>";
