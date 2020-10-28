@@ -143,11 +143,9 @@ a[id='fPassword'] {
     float: left;
     font-family: sans-serif;
     font-size: 20px;
-    font-style: "color:black";
-    padding: 0px;
     text-align: center;
     width: 33%;
-    /*Original*/
+    /*removed for validating purposes*/
     /*border: 1px solid;*/
 }
 
@@ -155,8 +153,8 @@ a[id='fPassword'] {
 /* Clearfix (clear floats) */
 
 .row::after {
-    content: "";
     clear: both;
+    content: "";
     display: table;
 }
 
