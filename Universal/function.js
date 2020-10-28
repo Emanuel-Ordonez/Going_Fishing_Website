@@ -1,11 +1,11 @@
 function setUpMenu() {
     var code = "";
+    code += "<div class=\"logoutButton\"><br /><a href=\"../Login-Signup/ConfirmLogout.html\">Logout</a></div>"
     code += "<nav>";
     code += "<div id='menuBar' class='navbar'>";
     code += "<ul>";
     code += "<li><a href='../Homepage/Homepage.html'>Home</a></li>";
-    code += "<li><a href='../resources/forum.html'>Forum</a></li>";
-    code += "<li>Gallery</li>";
+    code += "<li><a href='../FishDiary/diaryOverview.html'>Gallery</a></li>";
     code += "<li><a href='../resources/guide.html'>Beginner's Guide</a></li>";
     code += "<li><a href='../resources/gear.html'>Fishing Gear</a></li>";
     code += "<li><a href='../resources/about.html'>About Us</a></li>";
