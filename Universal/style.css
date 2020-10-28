@@ -25,7 +25,7 @@ ul {
 
 ul li {
     float: left;
-    width: calc(100%/7);
+    width: calc(100%/6);
     height: 40px;
     background-color: black;
     opacity: .75;
