@@ -1,0 +1,150 @@
+.parent-Container{
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 80px;
+    margin-right: auto;
+    margin-top: 115px;
+    padding: 20px;
+    z-index: 0;
+    
+}
+
+.entry-Container{
+    background-color: gray;
+    color: white;
+    float: left;
+    height: 350px;
+    justify-content: center;
+    margin: 30px;
+    position: relative;
+    text-align: center;
+    width: 300px;
+}
+
+.upload{
+    font-size: 20px;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img.entry-Container{
+    height: auto;
+    width: 240px;
+}
+
+.page-turn{
+    color: white;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: auto;
+    text-align: center;
+}
+
+.arrow {
+    vertical-align: middle;
+}
+
+.button{
+    align-self: center;
+    background-color: whitesmoke;
+    border: none;
+    display: inline-block;
+    font-size: 15px;
+    left: 78px;
+    padding: 15px 30px;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+}
+
+.confirm-button{
+    align-self: center;
+    background-color: whitesmoke;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 50px;
+    padding: 15px 30px;
+    text-align: center; 
+}
+
+.overlay {
+    align-content: center;
+    align-items: center;
+    /* fallback color because some browsers (IE) don't like alpha for some reason*/
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5); 
+    
+    bottom: 0;
+    display: flex;
+    height: 100%; 
+    justify-content: space-around;
+    left: 0;
+    opacity: 0;
+    position: fixed; 
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    width: 100%; 
+    z-index: 2; 
+  }
+
+.overlay:target{
+    opacity:1;
+    visibility: visible;
+}
+
+.new-entry{
+    align-content: center;
+    align-items: center;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: flex-end;
+    overflow: auto;
+    position: fixed;
+    width: 700px;
+    z-index: 3;
+}
+
+#description{
+    display: flex;
+    height: 100px;
+    justify-self: center;
+    margin: 20px;
+    resize: none;
+    text-align: left;
+    width: 600px;
+}
+
+#title{
+    margin-bottom:20px;
+    margin-left: 20px;
+    width:600px;
+}
+
+.title-text{
+    padding-top: 60px;
+}
+
+.preview-image{
+    height: 200px;
+    left: 300px;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 50px;
+    width: auto;
+}
+
+.close-button{
+    left: 640px;
+    position: absolute;
+    top: 10px;
+}

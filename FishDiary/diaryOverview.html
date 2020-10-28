@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <title>Catch of the Day</title>
+
+    <!--This file is for all files-->
+    <link rel="stylesheet" type="text/css" href="../Universal/style.css" />
+
+    <!--local css for this page only-->
+    <link rel="stylesheet" type="text/css" href="overviewStyle.css" />
+    
+    <!--Universal javascript file-->
+    <script type="text/javascript" src="../Universal/function.js"> </script>
+
+    <!--Local javascript file this page only-->
+    <script type="text/javascript" src="fishDiary.js"></script>
+    </head>
+    <body>
+        
+        <div class="main-container">
+            <h1 class ="companyName">The Tackle Box</h1>
+            <script>
+                document.write(setUpMenu());
+                document.write(setUpSideNav());
+            </script>
+            <div class="parent-Container">
+                <div class="entry-Container" id="container1">
+                    <img id="testImage" src="fish-picture.jpg" alt="fish" class="entry-Container">
+                    Picture title<br>
+                    <p id="dateLoc"></p>
+                    <script>
+                        document.write(printDate());
+                    </script>
+                </div>
+                <div class="entry-Container">
+                    <a class="button" href = "#uploadOverlay">Create Entry</a>
+                </div>
+                <div class="entry-Container">
+                    <p class = "upload">Empty entry slot</p>
+                </div>
+                <div class="entry-Container">
+                    <div class = "upload">Empty entry slot</div>
+                </div>
+                <div class="entry-Container">
+                    <div class = "upload">Empty entry slot</div>
+                </div>
+                <div class="entry-Container">
+                    <div class = "upload">Empty entry slot</div>
+                </div>
+                <div class="entry-Container">
+                    <div class = "upload">Empty entry slot</div>
+                </div>
+                <div class="entry-Container">
+                    <div class = "upload">Empty entry slot</div>
+                </div>
+            </div>
+            <div class="page-turn">
+                <img class = "arrow" id="leftArrow" src="Arrow-left.png" alt = "left">
+                Page 1
+                <img class = "arrow" id="rightArrow" src="Arrow-right.png" alt = "right">
+            </div>
+        </div>
+
+        <div id="uploadOverlay" class="overlay">
+            <div class="new-entry">
+                <a class="close-button" href="#"><img src="close-button.png" alt="close-x"></a>
+                <form id="uploadForm" action="diaryOverview.html">
+                    <img id="preview" class="preview-image" src="img-prev.png" alt="previewImage"><br>
+                    <label for="fileToUpload">Choose a file to upload:</label><br><br>
+                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="PreviewImage();">
+                    
+                    <p class="title-text"><label for="title">Title:</label></p>
+                    <input type = "text" id = "title"><br>
+                    <label for="description">Description:<br></label>
+                    <textarea id="description" rows="5" cols="100"></textarea>
+                    <input id= "confirm" class = "confirm-button" type="submit" value="Confirm" name="uploadConfirm">
+                </form>
+            </div>
+        </div>
+        <script>
+            document.write(setUpFooter());
+        </script>
+    </body>
+</html>
