@@ -1,3 +1,5 @@
+document.getElementById("SignUp").disabled = true;
+
 var passCheckNode = document.getElementById("RePass");
 var passCheckNode2 = document.getElementById("Pass");
 

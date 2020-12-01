@@ -8,6 +8,7 @@ function checker()
         passLabel.innerHTML = "Password match!";
         passLabel.style.color = "green";
         passLabel.style.visibility = "visible";
+        document.getElementById("SignUp").disabled = false;
     }
     else if(repassNode.value == "")
     {
