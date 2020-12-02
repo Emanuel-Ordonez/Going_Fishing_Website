@@ -26,7 +26,7 @@
   <div class="content-container">
     <h2>Contact Us</h2>
     <div class="contact-container">
-        <form id="contactForm" method="post" action="confirmation.html">
+        <form  method="POST" action="form.php" id="contact-form">
           <label for="firstname">First Name</label>
           <input type="text" id="firstname" name="firstname" placeholder="Your first name beginning with a capital letter" pattern="^[A-Z][a-z]+$" required>
       
@@ -36,11 +36,11 @@
           <label for="email">Email</label>
           <input type="text" id="email" name="email" placeholder="Your email with correct format." pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
       
-          <label for="question">Question or Comment</label>
-          <textarea id="question" name="question" placeholder="What would you like to ask us?" style="height:200px" required></textarea>
+          <label for="question">Message</label>
+          <textarea id="message" name="message" placeholder="What is your message?" style="height:200px" required></textarea>
           
           <input type="reset" value="Reset">
-          <input type="submit" id = "submit" value="Submit">
+          <input type="submit" id="submit" name="submit" value="Send">
         </form>
 
       </div>
