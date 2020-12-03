@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>User Profile</title>
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css"/>
+        <script type="text/javascript" src="SignUpJS.js"></script>
+    </head>
+    <body>
+        <div class="center-profile">
+            <div class="right-align"><a href="../Homepage/Homepage.html">Back</a></div>
+            <h1>User Profile</h1>
+            <br /><img class="profilePic" src="usericon.png" alt="UserProfile">
+            <table id="userInfo" aria-label="User info" class="userinfo">
+                <caption>User Details</caption>
+                <tbody>
+                    <tr>
+                        <th id="username">Username: </th>
+                        <td headers="username" class="username">Lorem ipsum dolor</td>
+                    </tr>
+
+                    <tr>
+                        <th id="email">Email: </th>
+                        <td headers="email" class="email">Lorem ipsum dolor</td>
+                    </tr>
+                    
+                    <tr>
+                        <th id="date_created">Date Created: </th>
+                        <td headers="date_created" class="date">Lorem ipsum dolor</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form method="post" action="ConfirmUpdatePassword.html">
+                <label class="changePass">Change User Password</label>
+                
+                <div class="passChange">
+                    <label>Old Password</label>
+                    <input id="oldPass" aria-label="Enter Old Password" type="password" required>
+                </div>
+                
+                <div class="passChange">
+                    <label>New Password</label>
+                    <input id="newPass" aria-label="Enter New Password" type="password" required>
+                </div>
+                
+                <div class="passChange">
+                    <label>Repeat New Password</label>
+                    <input id="newPassVerify" aria-label="Enter New Password Again" type="password" required>
+                </div>
+                
+                <div class="Mis">
+                    <label id="Mismatch">Passwords do not match</label>
+                </div>
+                <input type="Submit" value="Change Password">
+            </form>
+        </div>
+        <script type = "text/javascript" src = "SignUpJSReg2.js"></script>
+    </body>
+</html>

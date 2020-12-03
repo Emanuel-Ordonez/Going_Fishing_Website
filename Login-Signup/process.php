@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,7 +8,7 @@
         <!--This file is for all files-->
         <link rel="stylesheet" type="text/css" href="../Universal/style.css" />
 
-        <script type="text/javascript" src="../Universal/function.js"> </script>
+        <!-- <script type="text/javascript" src="../Universal/function.js"> </script> -->
 
         <meta charset="UTF-8">
     </head>
@@ -13,10 +16,14 @@
 <!--Container separates body from footer-->
 <div class="main-container">
   <h1 class ="companyName">The Tackle Box</h1>
-    <script>
+    <!-- <script>
       document.write(setUpMenu());
       document.write(setUpSideNav());
-    </script>
+    </script> -->
+
+    <?php
+        include_once '../Universal/function.php';
+    ?>
   
   <div class="content-container">
     <?php
@@ -61,13 +68,16 @@
             }
         }
     ?>
-    <h2>Click <a href="../Homepage/Homepage.html">here</a> to go back to the homepage.</h2>
+    <h2>Click <a href="../Homepage/Homepage.php">here</a> to go back to the homepage.</h2>
   </div>
 
 <!--Separate footer from body-->
 </div>    
-<script>
+<!-- <script>
   document.write(setUpFooter());
-</script>
+</script> -->
+<?php
+    include_once '../Universal/footer.php';
+?>
 </body>
 </html>

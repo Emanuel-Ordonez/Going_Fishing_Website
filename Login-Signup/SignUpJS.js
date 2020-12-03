@@ -1,4 +1,4 @@
-function checker()
+function checker() //Sign Up Page
 {
     var passNode = document.getElementById("Pass");
     var repassNode = document.getElementById("RePass");
@@ -24,7 +24,7 @@ function checker()
     }
 }
 
-function checker2()
+function checker2() //Forgot Password Page
 {
     var passNode = document.getElementById("Pass");
     var repassNode = document.getElementById("RePass");
@@ -43,7 +43,7 @@ function checker2()
     }
 }
 
-function changeVerify()
+function changeVerify() //Profile Page
 {
     var oldPassNode = document.getElementById("oldPass");
     var newPassNode = document.getElementById("newPass");
@@ -63,6 +63,7 @@ function changeVerify()
                     passLabel.innerHTML = "Password match!";
                     passLabel.style.color = "green";
                     passLabel.style.visibility = "visible";
+                    document.getElementById("changePass").disabled = false;
                 }
                 else if((newPassNode.value!=newPassVerifyNode.value) && (newPassNode.value!="" && newPassVerifyNode.value!=""))
                 {
