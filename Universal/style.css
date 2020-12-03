@@ -138,14 +138,24 @@ a[id='fPassword'] {
     z-index: 0;
 }
 
-.img-options-right {
-    float: right;
-    padding-left: 10px;
+.column {
+    background-color: grey;
+    float: left;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 33%;
+    /*removed for validating purposes*/
+    /*border: 1px solid;*/
 }
 
-.img-options-left {
-    float: left;
-    padding-right: 10px;
+
+/* Clearfix (clear floats) */
+
+.row::after {
+    clear: both;
+    content: "";
+    display: table;
 }
 
 .img-options-center {

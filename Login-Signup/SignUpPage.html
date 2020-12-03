@@ -12,17 +12,17 @@
         <div class="center">
             <div class="right-align"><br /><a href="../Homepage/Homepage.html">Back</a></div>
             <h1>Sign Up</h1>
-            <form id="formCheck" method="post" action="ConfirmSignUp.html">
+            <form id="formCheck" method="post" action="process.php">
                 <div class="txt_field">
-                    <input aria-label="email entry" type="email" required>
+                    <input name="email" aria-label="email entry" type="email" required>
                     <label>Email</label>
                 </div>
                 <div class="txt_field">
-                    <input aria-label="username entry" type="text" required>
+                    <input name="username" aria-label="username entry" type="text" required>
                     <label>Username</label>
                 </div>
                 <div class="txt_field">
-                    <input id="Pass" aria-label="password entry" type="password" required>
+                    <input name="password" id="Pass" aria-label="password entry" type="password" required>
                     <label>Password</label>
                 </div>
                 <div class="txt_field">
@@ -32,7 +32,7 @@
                 <div class="Mis">
                 <label id="Mismatch">Passwords do not match</label>
                 </div>
-                <input type="Submit" value="Sign Up">
+                <input id="SignUp" type="Submit" value="Sign Up">
             </form>
         </div>
         <script type = "text/javascript" src = "SignUpJSReg.js"></script>
