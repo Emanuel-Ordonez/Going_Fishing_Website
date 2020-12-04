@@ -35,10 +35,10 @@
 						exit("<p>You must completely fill out the form to upload a picture. Use the back button to return to the gallery.</p>");
 						
 					//Test connection to database
-					$DBConnect = @mysqli_connect("localhost","group5","k9mWTDJZ7V0w")
+					$DBConnect = mysqli_connect("localhost","group5","k9mWTDJZ7V0w")
 						Or die("<p>The database server is not available</p>");
 					$DBName="group5";
-					$DBSelect=@mysqli_select_db($DBConnect,$DBName)
+					$DBSelect= mysqli_select_db($DBConnect,$DBName)
 						Or die("<p> The database is not available.</p>");
 					$targetedID = $_SESSION['userID'];
 					//Test to see if user is logged in
@@ -84,6 +84,7 @@
 						// if everything is ok, try to upload file
 						} else {
 						  if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+
 							  	$titleQuery = htmlspecialchars(stripcslashes($_POST['title']));
 								$descQuery = htmlspecialchars(stripcslashes($_POST['description']));
 								$locationQuery = htmlspecialchars(stripcslashes($_POST['location']));

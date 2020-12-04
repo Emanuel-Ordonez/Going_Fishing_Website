@@ -65,7 +65,7 @@
 							$count = 1 ;
 							do {
                                 echo "<div class=\"entry-Container\">";
-								echo "<img id='catch". $count . "' src='" . $Row[6] . "' alt='" . $Row[6] . "' class='entry-Container'>";
+								echo "<img id='catch". $count . "' src='uploads/" . $Row[6] . "' alt='" . $Row[6] . "' class='entry-Container'>";
 								echo "<p id='picTitle" . $count . "'>" . $Row[4] . "</p>";
 								echo "<p id='dateLoc'> Uploaded: " .  $Row[3] . "</p>";
                                 echo "<p id='location'>Place:" . $Row[5] . "</p>";
