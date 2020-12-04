@@ -119,13 +119,13 @@
                     <img id="preview" class="preview-image" src="img-prev.png" alt="previewImage"><br>
                     <label for="fileToUpload">Choose a file to upload:</label><br><br>
                     <input type="file" name="fileToUpload" id="fileToUpload" onchange="PreviewImage();">
-                    
+                    <!-- Added names to inputs  -->
                     <p class="title-text"><label for="title">Title:</label></p>
-                    <input type = "text" id = "title"><br>
+                    <input type = "text" id = "title" name="title"><br>
                     <label for="location">Location:<br></label>
-					<input type = "text" id = "location"><br>
+					<input type = "text" id = "location" name="location"><br>
                     <label for="description">Description:<br></label>
-                    <textarea id="description" rows="5" cols="100"></textarea>
+                    <textarea name="description" id="description" rows="5" cols="100"></textarea>
                     <input id= "confirm" class = "confirm-button" type="submit" value="Confirm" name="uploadConfirm">
                 </form>
             </div>

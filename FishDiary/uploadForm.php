@@ -30,7 +30,8 @@
 			
             <div class="content-Container">
 				<?php
-					if(empty($_POST['title']) || empty($_POST['Desc']) ||empty($_POST['Location']))
+				//changed Desc to description and Location to location to fit ids
+					if(empty($_POST['title']) || empty($_POST['description']) ||empty($_POST['location']))
 						exit("<p>You must completely fill out the form to upload a picture. Use the back button to return to the gallery.</p>");
 						
 					//Test connection to database
@@ -84,7 +85,7 @@
 						} else {
 						  if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
 							  	$titleQuery = htmlspecialchars(stripcslashes($_POST['title']));
-								$descQuery = htmlspecialchars(stripcslashes($_POST['DESC']));
+								$descQuery = htmlspecialchars(stripcslashes($_POST['description']));
 								$locationQuery = htmlspecialchars(stripcslashes($_POST['location']));
 								$SQLString = "INSERT INTO Album_Entry VALUES(NULL,'$targetedID','$descQuery','$titleQuery','$locationQuery','$filename')";
 								$QueryResult = mysqli_query($DBConnect,$SQLString);

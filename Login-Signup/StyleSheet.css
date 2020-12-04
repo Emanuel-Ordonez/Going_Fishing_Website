@@ -267,6 +267,50 @@ input[type=number] {
     border-radius: 10px;
 }
 
+.adminUser input[type="number"]{
+	background: none;
+	border: none;
+	border-bottom: 2px solid silver;
+    font-size: 16px;
+	height: 40px;
+    margin: 20px 0;
+	outline: none;
+    padding: 0 5px;
+    position: relative;
+    width: 100%;
+}
+
+.adminUser input[type="number"]:hover{
+    border-bottom: 2px solid #2691d9;
+}
+
+.adminUser input[type="submit"]:hover{
+    border-color: #2691d9;
+    /* transition: .5s; */
+}
+
+.removePost input[type="number"]{
+	background: none;
+	border: none;
+	border-bottom: 2px solid silver;
+    font-size: 16px;
+	height: 40px;
+    margin: 20px 0;
+	outline: none;
+    padding: 0 5px;
+    position: relative;
+    width: 100%;
+}
+
+.removePost input[type="number"]:hover{
+    border-bottom: 2px solid #2691d9;
+}
+
+.removePost input[type="submit"]:hover{
+    border-color: #2691d9;
+    /* transition: .5s; */
+}
+
 .right-align{
     float: right;
 }

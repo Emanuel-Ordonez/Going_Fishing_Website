@@ -28,13 +28,13 @@
                     </fieldset>
                 </form>
             </div>    
-            <div class="giveAdmin">
+            <div class="adminUser">
                 
                 <form class="adminForm" method="post" action="admin.php">
                     <fieldset>
                         <legend>Give Admin to User</legend>
                             <input name="adminUser" type="number" id="userID" aria-label="user ID entry"  placeholder="Username to give admin" required>
-                            <input type="Submit" value="Ban User">
+                            <input type="Submit" value="Admin User">
                     </fieldset>
                 </form>
             </div>
