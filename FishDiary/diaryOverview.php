@@ -122,9 +122,9 @@
                     
                     <p class="title-text"><label for="title">Title:</label></p>
                     <input type = "text" id = "title"><br>
-                    <label for="description">Description:<br></label>
-					<input type = "text" id = "location"><br>
                     <label for="location">Location:<br></label>
+					<input type = "text" id = "location"><br>
+                    <label for="description">Description:<br></label>
                     <textarea id="description" rows="5" cols="100"></textarea>
                     <input id= "confirm" class = "confirm-button" type="submit" value="Confirm" name="uploadConfirm">
                 </form>
