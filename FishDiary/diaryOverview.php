@@ -49,7 +49,8 @@
 					}
 					//Query the database for user info
 					else {
-						$SQLString = "SELECT * FROM Album_Entry WHERE userID = $targetedID ORDER BY time_submitted ASC";
+                        //REMOVED USERID from select statement
+						$SQLString = "SELECT * FROM Album_Entry WHERE ORDER BY time_submitted ASC";
 						$QueryResult = mysqli_query($DBConnect,$SQLString);
 						$NumPics = mysqli_num_rows($QueryResult);
 						$Row = mysqli_fetch_assoc($QueryResult);
@@ -63,10 +64,18 @@
 							//Populate the page with user pics
 							$count = 1 ;
 							do {
-								echo "<img id='catch". $count . "' src='" . $Row['picPath'] . "' alt='" . $Row['Desc'] . "' class='entry-Container'>";
-								echo "<p id='picTitle" . $count . "'>" . $Row['title'] . "</p>";
-								echo "<p id='dateLoc'> Uploaded: " .  $Row['time_submitted'] . "</p>";
-								echo "<p id='location'>Place:" . $Row['location'] . "</p>";
+                                echo "<div class=\"entry-Container\">";
+								echo "<img id='catch". $count . "' src='" . $Row[6] . "' alt='" . $Row[6] . "' class='entry-Container'>";
+								echo "<p id='picTitle" . $count . "'>" . $Row[4] . "</p>";
+								echo "<p id='dateLoc'> Uploaded: " .  $Row[3] . "</p>";
+                                echo "<p id='location'>Place:" . $Row[5] . "</p>";
+                                echo "</div>";
+                                // echo "<div class=\"entry-Container\">";
+								// echo "<img id='catch". $count . "' src='" . $Row['picPath'] . "' alt='" . $Row['Desc'] . "' class='entry-Container'>";
+								// echo "<p id='picTitle" . $count . "'>" . $Row['title'] . "</p>";
+								// echo "<p id='dateLoc'> Uploaded: " .  $Row['time_submitted'] . "</p>";
+                                // echo "<p id='location'>Place:" . $Row['location'] . "</p>";
+                                // echo "</div>";
 								$Row = mysqli_fetch_assoc($QueryResult);
 							} while ($Row);
 						}

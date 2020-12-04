@@ -87,7 +87,8 @@
 							  	$titleQuery = htmlspecialchars(stripcslashes($_POST['title']));
 								$descQuery = htmlspecialchars(stripcslashes($_POST['description']));
 								$locationQuery = htmlspecialchars(stripcslashes($_POST['location']));
-								$SQLString = "INSERT INTO Album_Entry VALUES(NULL,'$targetedID','$descQuery','$titleQuery','$locationQuery','$filename')";
+								// ADDED (userID, description, title, location, picture_path)
+								$SQLString = "INSERT INTO Album_Entry (userID, description, title, location, picture_path) VALUES($targetedID,'$descQuery','$titleQuery','$locationQuery', '$filename')";
 								$QueryResult = mysqli_query($DBConnect,$SQLString);
 							echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
 						  } else {
