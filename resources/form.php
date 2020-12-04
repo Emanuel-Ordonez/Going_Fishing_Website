@@ -26,10 +26,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     $headers = "From:" . $to;
     $headers .= "\nReply-To:" . $email_address;
     mail($to,$email_subject,$email_body,$headers);
-    header('Location: confirmation.html');
+    header('Location: confirmation.php');
   }
   else{
-    header('Location: error.html');
+    header('Location: error.php');
   }
 }
 ?>
