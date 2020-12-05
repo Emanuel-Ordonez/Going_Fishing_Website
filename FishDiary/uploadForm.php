@@ -31,7 +31,7 @@
 		<div class="content-Container">
 			<?php
 				$targetedID = $_SESSION['userID'];
-				print "$targetedID";
+				// print "$targetedID";
 				//Test connection to database
 				$DBConnect = mysqli_connect("localhost","group5","k9mWTDJZ7V0w")
 				Or die("<p>The database server is not available</p>");
@@ -90,11 +90,11 @@
 							$titleQuery = htmlspecialchars(stripcslashes($_POST['title']));
 							$descQuery = htmlspecialchars(stripcslashes($_POST['description']));
 							$locationQuery = htmlspecialchars(stripcslashes($_POST['location']));
-							print "file name: $filename";
-								print "User id: $targetedID";
-								print "description: $descQuery";
-								print "title: $titleQuery";
-								print "Location: $locationQuery";
+							// print "file name: $filename";
+							// 	print "User id: $targetedID";
+							// 	print "description: $descQuery";
+							// 	print "title: $titleQuery";
+							// 	print "Location: $locationQuery";
 							// ADDED (userID, description, title, location, picture_path)
 							$SQLString = "INSERT INTO Album_Entry (userID, description, title, location, picture_path) VALUES($targetedID,'$descQuery','$titleQuery','$locationQuery', '$filename')";
 							$QueryResult = mysqli_query($DBConnect,$SQLString);
