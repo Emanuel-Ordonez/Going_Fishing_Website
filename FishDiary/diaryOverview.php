@@ -44,19 +44,19 @@
 						Or die("<p> The database is not available.</p>");
 					$targetedID = $_SESSION['userID'];
 					//Test to see if user is logged in
-					if($targetedID = NULL){
-						echo "<p>Please sign in before accessing the gallery</p>";
+					if($targetedID == NULL){
+						die("<div class='entry-Container' id='container1'><p>Please sign in before accessing the gallery</p></div>");
 					}
 					//Query the database for user info
 					else {
                         //REMOVED USERID from select statement
                         //Change SELECT * FROM Album_Entry WHERE ORDER BY time_submitted ASC
-						$SQLString = "SELECT * FROM Album_Entry ORDER BY time_submitted DESC";
+						$SQLString = "SELECT * FROM Album_Entry userID = $targetedID ORDER BY time_submitted DESC";
 						$QueryResult = mysqli_query($DBConnect,$SQLString);
 						$NumPics = mysqli_num_rows($QueryResult);
 						// $Row = mysqli_fetch_assoc($QueryResult);
 						//See if user has any pics in the database
-						if($NumPics = 0 || $NumPics = NULL){
+						if($NumPics == 0 || $NumPics == NULL){
 							echo "<div class='entry-Container' id='container1'>";
 							echo "<p id='dateLoc'>You have not uploaded any pictures yet</p>";
 							echo "</div>";
