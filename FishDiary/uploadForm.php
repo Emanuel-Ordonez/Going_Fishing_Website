@@ -43,7 +43,7 @@
 				if(empty($_POST['title']) || empty($_POST['description']) ||empty($_POST['location']))
 					exit("<p>You must completely fill out the form to upload a picture. Use the back button to return to the gallery.</p>");
 
-				if($targetedID = NULL){
+				if($targetedID == NULL){
 					exit("<p>Please sign in before accessing the gallery</p>");
 				}
 				//Query the database for user info

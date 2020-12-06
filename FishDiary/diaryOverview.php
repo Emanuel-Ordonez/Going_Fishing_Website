@@ -44,7 +44,7 @@
 						Or die("<p> The database is not available.</p>");
 					$targetedID = $_SESSION['userID'];
 					//Test to see if user is logged in
-					if($targetedID = NULL){
+					if($targetedID == NULL){
 						echo "<p>Please sign in before accessing the gallery</p>";
 					}
 					//Query the database for user info
