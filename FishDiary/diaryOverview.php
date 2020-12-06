@@ -56,7 +56,7 @@
 						$NumPics = mysqli_num_rows($QueryResult);
 						// $Row = mysqli_fetch_assoc($QueryResult);
 						//See if user has any pics in the database
-						if($NumPics = 0 || $NumPics = NULL){
+						if($NumPics == 0 || $NumPics == NULL){
 							echo "<div class='entry-Container' id='container1'>";
 							echo "<p id='dateLoc'>You have not uploaded any pictures yet</p>";
 							echo "</div>";
