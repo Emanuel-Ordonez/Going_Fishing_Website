@@ -45,13 +45,13 @@
 					$targetedID = $_SESSION['userID'];
 					//Test to see if user is logged in
 					if($targetedID == NULL){
-						echo "<p>Please sign in before accessing the gallery</p>";
+						die("<div class='entry-Container' id='container1'><p>Please sign in before accessing the gallery</p></div>");
 					}
 					//Query the database for user info
 					else {
                         //REMOVED USERID from select statement
                         //Change SELECT * FROM Album_Entry WHERE ORDER BY time_submitted ASC
-						$SQLString = "SELECT * FROM Album_Entry ORDER BY time_submitted DESC";
+						$SQLString = "SELECT * FROM Album_Entry userID = $targetedID ORDER BY time_submitted DESC";
 						$QueryResult = mysqli_query($DBConnect,$SQLString);
 						$NumPics = mysqli_num_rows($QueryResult);
 						// $Row = mysqli_fetch_assoc($QueryResult);
