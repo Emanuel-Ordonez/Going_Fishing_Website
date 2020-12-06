@@ -51,7 +51,7 @@
 					else {
                         //REMOVED USERID from select statement
                         //Change SELECT * FROM Album_Entry WHERE ORDER BY time_submitted ASC
-						$SQLString = "SELECT * FROM Album_Entry userID = $targetedID ORDER BY time_submitted DESC";
+						$SQLString = "SELECT * FROM Album_Entry WHERE userID = $targetedID ORDER BY time_submitted DESC";
 						$QueryResult = mysqli_query($DBConnect,$SQLString);
 						$NumPics = mysqli_num_rows($QueryResult);
 						// $Row = mysqli_fetch_assoc($QueryResult);
