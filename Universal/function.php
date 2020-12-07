@@ -7,11 +7,11 @@
 <div id='menuBar' class='navbar'>
 <ul>
 <li><a href='../Homepage/Homepage.php'>Home</a></li>
-<li><a href='../FishDiary/diaryOverview.html'>Gallery</a></li>
-<li><a href='../resources/guide.html'>Beginner's Guide</a></li>
-<li><a href='../resources/gear.html'>Fishing Gear</a></li>
-<li><a href='../resources/about.html'>About Us</a></li>
-<li><a href='../resources/contact.html'>Contact Us</a></li>
+<li><a href='../FishDiary/diaryOverview.php'>Gallery</a></li>
+<li><a href='../resources/guide.php'>Beginner's Guide</a></li>
+<li><a href='../resources/gear.php'>Fishing Gear</a></li>
+<li><a href='../resources/about.php'>About Us</a></li>
+<li><a href='../resources/contact.php'>Contact Us</a></li>
 </ul>
 </div>
 </nav>
